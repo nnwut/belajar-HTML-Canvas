@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan 12</title>
+</head>
+<body>
+    <style>
+      canvas {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>membuat lingkaran</h1>
+    <canvas
+      id="myCanvas"
+      width="640"
+      height="480"
+      style="border: 1px solid grey"
+    ></canvas>
+  </body>
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(300, 300, 100, 0, Math.PI * 2, false);
+    ctx.stroke();   
+
+    </script>
+</body>
+</html>

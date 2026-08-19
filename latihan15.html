@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan 14</title>
+</head>
+<body>
+    <style>
+      canvas {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h1 {
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>membuat trapesium</h1>
+    <canvas
+      id="myCanvas"
+      width="640"
+      height="480"
+      style="border: 1px solid grey"
+    ></canvas>
+  </body>
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(100, 50);
+    ctx.lineTo(300, 50);
+    ctx.lineTo(350, 200);
+    ctx.lineTo(50, 200);
+    ctx.closePath();
+    ctx.fillStyle = "lightblue"; // Mengatur warna isi menjadi biru
+    ctx.fill(); // Mengisi trapesium dengan warna biru
+    ctx.lineWidth = 5; // Mengatur ketebalan garis menjadi 5 piksel
+    ctx.strokeStyle = "blue"; // Mengatur warna garis menjadi merah
+    ctx.stroke();
+     
+
+    </script>
+</body>
+</html>

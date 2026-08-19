@@ -1,0 +1,29 @@
+#myCanvas {
+    width: 700;
+    height: 300;
+    border: 1px solid #5800ca;
+    background-color: #ffffff;
+    
+    
+}
+canvas {
+    width: 700;
+    height: 300;
+
+    
+}
+body {
+    background-color: #000000c9;
+    
+    
+}
+.Canvas {
+    display: block;
+    margin: 0 auto;
+    
+}
+h1 {
+    text-align: center;
+    color: #0f0f0f;
+}
+

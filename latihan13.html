@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan 13</title>
+</head>
+<body>
+    <style>
+      canvas {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h1 {
+        text-align: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>membuat lingkaran berwarna</h1>
+    <canvas
+      id="myCanvas"
+      width="640"
+      height="480"
+      style="border: 1px solid grey"
+    ></canvas>
+  </body>
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(300, 300, 100, 0, Math.PI * 2, false);
+    ctx.fillStyle = "blue"; // Mengatur warna isi menjadi biru
+    ctx.fill(); // Mengisi lingkaran dengan warna biru
+    ctx.lineWidth = 5; // Mengatur ketebalan garis menjadi 5 piksel
+    ctx.strokeStyle = "red"; // Mengatur warna garis menjadi merah
+    ctx.stroke();   
+
+    </script>
+</body>
+</html>

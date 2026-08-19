@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 16</title>
+    <style>
+      canvas {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>membuat tv</h1>
+    <canvas
+      id="myCanvas"
+      width="600"
+      height="400"
+      style="border: 1px solid grey"
+    ></canvas>
+  </body>
+  <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#2f4f4f";
+    ctx.fillRect(150, 100, 300, 200);
+    ctx.fillStyle = "#87ceeb";
+    ctx.fillRect(170, 120, 260, 160);
+
+    ctx.beginPath();
+    ctx.moveTo(300, 50);
+    ctx.lineTo(270, 100);
+    ctx.lineTo(330, 100);
+    ctx.closePath();
+    ctx.fillStyle = "#8b0000";
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(300, 320, 20, 0, 2 * Math.PI);
+    ctx.fillStyle = "red";
+    ctx.fill();
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(270, 100);
+    ctx.lineTo(230, 50);
+    ctx.strokeStyle = "black";
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(330, 100);
+    ctx.lineTo(370, 50);
+    ctx.stroke();
+
+    
+  </script>
+</html>

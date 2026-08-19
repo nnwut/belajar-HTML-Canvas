@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 10</title>
+    <link rel="stylesheet" href="style5.css" />
+  </head>
+  <body>
+    <h1>Latihan 10 menggambar garis</h1>
+    <canvas id="myCanvas" width="200" height="100" class="Canvas"></canvas>
+
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+
+      ctx.fillStyle = "blue"; // Mengatur warna isi menjadi biru
+      ctx.fillRect(10, 10, 180, 50); // Menggambar
+    </script>
+  </body>
+</html>
